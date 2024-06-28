@@ -1,0 +1,112 @@
+/*Color Palette
+#003554- Dark Blue
+#006494- Medium Blue
+#00A6FB- Light Blue*/
+/*Body*/
+.portfolio {
+    background-color: #003554;
+}
+/*Header*/
+header {
+  background-color: #00A6FB;  
+    position: absolute;
+    width: 100%;
+    opacity: 75%;
+    margin-bottom: 10%;
+    z-index: inherit;
+  }
+/*Navigation*/
+ul {
+    font-family: "Montserrat", "sans serif";
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #006494;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+  }
+  
+  li a:hover:not(.active) {
+    opacity: 25%;
+    color: white;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #00A6FB;
+    opacity: 100%;
+  }
+  h1 {
+    font-family: "Playfair Display", "serif";
+    color: white;
+    text-align: center;
+    font-size: 4em;
+  }
+  h2 {
+    font-family: "Montserrat", "sans serif";
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  /*Grid*/
+  .grid-container {
+    display: grid;
+    column-gap: 4em;
+    grid-template-columns: auto auto auto;
+    margin-top: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1em;
+  }
+  
+  .picture {
+    margin-top: 10%;
+    padding: 20px;
+    align-content: center;
+  }
+  #blank1, #blank2, #blank3, #blank4{
+    background-color: transparent;
+  }
+  #center{
+    max-width: 100%;
+  }
+  #boat{
+    max-width: 200%;
+  }
+  /*Responsive Design*/
+  @media screen and (max-width: 1153px)
+  {
+    body{
+        font-size: .8em;
+    }
+    .grid-container {
+        display: list-item;
+        grid-auto-flow: row;
+        align-content: center;
+        width: 100%;
+        margin: 2%;
+    }
+    .grid-container > div {
+        width: 90%;
+        align-content: center;
+    }
+    .nav {
+        display: block;
+        width: 100%;
+        align-content: center;
+        line-height: 2;
+    }
+  }
